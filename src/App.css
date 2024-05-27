@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('http://fonts.cdnfonts.com/css/kontanter');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@layer base {
+    html {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        /* background-color:#252423; */
+        background-color:#1e2023;
+    }
+    
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 2px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 2px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        height: 80px;
+        background-color: #f1faee;
+    }
+
+    .fixedNav svg {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fixedNav a:hover > svg {
+        stroke: #1d3557;
+    }
+    .active {
+        background-color: #f1faee;
+    }
+    .active-svg svg {
+        stroke: #1d3557;
+    }
+    .subscribe:hover > .subscribeIcon svg {
+        stroke: #1d3557;
+    }
+  }
